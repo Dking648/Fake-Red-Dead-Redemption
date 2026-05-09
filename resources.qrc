@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/icecream.png</file>
+        <file>images/kid_full.png</file>
+        <file>images/shop_bg.png</file>
+        <file>images/tang_body.png</file>
+        <file>images/tang_head.png</file>
+        <file>images/tang_left_arm.png</file>
+        <file>images/tang_left_leg.png</file>
+        <file>images/tang_right_arm.png</file>
+        <file>images/tang_right_leg.png</file>
+        <file>images/menu_bg.jpg</file>
+        <file>music/bgm.mp3</file>
+    </qresource>
+</RCC>
