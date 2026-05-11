@@ -97,6 +97,14 @@ build CMakeFiles/tangjiaqi.dir/gamewidget.cpp.obj: CXX_COMPILER__tangjiaqi_unsca
   OBJECT_DIR = CMakeFiles\tangjiaqi.dir
   OBJECT_FILE_DIR = CMakeFiles\tangjiaqi.dir
 
+build CMakeFiles/tangjiaqi.dir/CowboyRunGame.cpp.obj: CXX_COMPILER__tangjiaqi_unscanned_Debug D$:/Qt_project/tangjiaqi/CowboyRunGame.cpp || cmake_object_order_depends_target_tangjiaqi
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\tangjiaqi.dir\CowboyRunGame.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/Qt_project/tangjiaqi/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/tangjiaqi_autogen/include -isystem D:/Qt/6.10.2/mingw_64/include/QtWidgets -isystem D:/Qt/6.10.2/mingw_64/include -isystem D:/Qt/6.10.2/mingw_64/include/QtCore -isystem D:/Qt/6.10.2/mingw_64/mkspecs/win32-g++ -isystem D:/Qt/6.10.2/mingw_64/include/QtGui -isystem D:/Qt/6.10.2/mingw_64/include/QtMultimedia -isystem D:/Qt/6.10.2/mingw_64/include/QtNetwork
+  OBJECT_DIR = CMakeFiles\tangjiaqi.dir
+  OBJECT_FILE_DIR = CMakeFiles\tangjiaqi.dir
+
 build CMakeFiles/tangjiaqi.dir/Character.cpp.obj: CXX_COMPILER__tangjiaqi_unscanned_Debug D$:/Qt_project/tangjiaqi/Character.cpp || cmake_object_order_depends_target_tangjiaqi
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\tangjiaqi.dir\Character.cpp.obj.d
@@ -137,7 +145,7 @@ build CMakeFiles/tangjiaqi.dir/tangjiaqi_autogen/EWIEGA46WW/qrc_resources.cpp.ob
 #############################################
 # Link the executable tangjiaqi.exe
 
-build tangjiaqi.exe: CXX_EXECUTABLE_LINKER__tangjiaqi_Debug CMakeFiles/tangjiaqi.dir/tangjiaqi_autogen/mocs_compilation.cpp.obj CMakeFiles/tangjiaqi.dir/main.cpp.obj CMakeFiles/tangjiaqi.dir/MainWindow.cpp.obj CMakeFiles/tangjiaqi.dir/MenuWidget.cpp.obj CMakeFiles/tangjiaqi.dir/LevelSelectWidget.cpp.obj CMakeFiles/tangjiaqi.dir/gamewidget.cpp.obj CMakeFiles/tangjiaqi.dir/Character.cpp.obj CMakeFiles/tangjiaqi.dir/Player.cpp.obj CMakeFiles/tangjiaqi.dir/NPC.cpp.obj CMakeFiles/tangjiaqi.dir/tangjiaqi_autogen/EWIEGA46WW/qrc_resources.cpp.obj | D$:/Qt/6.10.2/mingw_64/lib/libQt6Widgets.a D$:/Qt/6.10.2/mingw_64/lib/libQt6Multimedia.a D$:/Qt/6.10.2/mingw_64/lib/libQt6Gui.a D$:/Qt/6.10.2/mingw_64/lib/libQt6Network.a D$:/Qt/6.10.2/mingw_64/lib/libQt6Core.a || tangjiaqi_autogen tangjiaqi_autogen_timestamp_deps
+build tangjiaqi.exe: CXX_EXECUTABLE_LINKER__tangjiaqi_Debug CMakeFiles/tangjiaqi.dir/tangjiaqi_autogen/mocs_compilation.cpp.obj CMakeFiles/tangjiaqi.dir/main.cpp.obj CMakeFiles/tangjiaqi.dir/MainWindow.cpp.obj CMakeFiles/tangjiaqi.dir/MenuWidget.cpp.obj CMakeFiles/tangjiaqi.dir/LevelSelectWidget.cpp.obj CMakeFiles/tangjiaqi.dir/gamewidget.cpp.obj CMakeFiles/tangjiaqi.dir/CowboyRunGame.cpp.obj CMakeFiles/tangjiaqi.dir/Character.cpp.obj CMakeFiles/tangjiaqi.dir/Player.cpp.obj CMakeFiles/tangjiaqi.dir/NPC.cpp.obj CMakeFiles/tangjiaqi.dir/tangjiaqi_autogen/EWIEGA46WW/qrc_resources.cpp.obj | D$:/Qt/6.10.2/mingw_64/lib/libQt6Widgets.a D$:/Qt/6.10.2/mingw_64/lib/libQt6Multimedia.a D$:/Qt/6.10.2/mingw_64/lib/libQt6Gui.a D$:/Qt/6.10.2/mingw_64/lib/libQt6Network.a D$:/Qt/6.10.2/mingw_64/lib/libQt6Core.a || tangjiaqi_autogen tangjiaqi_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_LIBRARIES = D:/Qt/6.10.2/mingw_64/lib/libQt6Widgets.a  D:/Qt/6.10.2/mingw_64/lib/libQt6Multimedia.a  D:/Qt/6.10.2/mingw_64/lib/libQt6Gui.a  -ld3d11  -ldxgi  -ldxguid  -ld3d12  D:/Qt/6.10.2/mingw_64/lib/libQt6Network.a  -lws2_32  D:/Qt/6.10.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\tangjiaqi.dir
@@ -198,7 +206,7 @@ build tangjiaqi_autogen/timestamp tangjiaqi_autogen/mocs_compilation.cpp | ${cma
 #############################################
 # Custom command for tangjiaqi_autogen\EWIEGA46WW\qrc_resources.cpp
 
-build tangjiaqi_autogen/EWIEGA46WW/qrc_resources.cpp | ${cmake_ninja_workdir}tangjiaqi_autogen/EWIEGA46WW/qrc_resources.cpp: CUSTOM_COMMAND D$:/Qt_project/tangjiaqi/resources.qrc CMakeFiles/tangjiaqi_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json D$:/Qt_project/tangjiaqi/music/bgm.mp3 D$:/Qt_project/tangjiaqi/images/tang_left_arm.png D$:/Qt_project/tangjiaqi/images/tang_head.png D$:/Qt_project/tangjiaqi/images/tang_left_leg.png D$:/Qt_project/tangjiaqi/images/tang_body.png D$:/Qt_project/tangjiaqi/images/menu_bg.jpg D$:/Qt_project/tangjiaqi/images/icecream.png D$:/Qt_project/tangjiaqi/images/tang_right_leg.png D$:/Qt_project/tangjiaqi/images/tang_right_arm.png D$:/Qt_project/tangjiaqi/images/kid_full.png D$:/Qt_project/tangjiaqi/images/shop_bg.png D$:/Qt/6.10.2/mingw_64/bin/rcc.exe D$:/Qt/6.10.2/mingw_64/bin/rcc.exe || tangjiaqi_autogen tangjiaqi_autogen_timestamp_deps
+build tangjiaqi_autogen/EWIEGA46WW/qrc_resources.cpp | ${cmake_ninja_workdir}tangjiaqi_autogen/EWIEGA46WW/qrc_resources.cpp: CUSTOM_COMMAND D$:/Qt_project/tangjiaqi/resources.qrc CMakeFiles/tangjiaqi_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json D$:/Qt_project/tangjiaqi/music/cowboy_bgm.mp3 D$:/Qt_project/tangjiaqi/music/bgm.mp3 D$:/Qt_project/tangjiaqi/images/tang_left_arm.png D$:/Qt_project/tangjiaqi/images/tang_head.png D$:/Qt_project/tangjiaqi/images/tang_left_leg.png D$:/Qt_project/tangjiaqi/images/tang_body.png D$:/Qt_project/tangjiaqi/images/menu_bg.jpg D$:/Qt_project/tangjiaqi/images/icecream.png D$:/Qt_project/tangjiaqi/images/tang_right_leg.png D$:/Qt_project/tangjiaqi/images/tang_right_arm.png D$:/Qt_project/tangjiaqi/images/kid_full.png D$:/Qt_project/tangjiaqi/images/shop_bg.png D$:/Qt/6.10.2/mingw_64/bin/rcc.exe D$:/Qt/6.10.2/mingw_64/bin/rcc.exe || tangjiaqi_autogen tangjiaqi_autogen_timestamp_deps
   COMMAND = C:\windows\system32\cmd.exe /C "cd /D D:\Qt_project\tangjiaqi\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debug && D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/Qt_project/tangjiaqi/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/tangjiaqi_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json Debug"
   DESC = Automatic RCC for resources.qrc
   restat = 1

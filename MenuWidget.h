@@ -16,6 +16,8 @@ public:
 
 signals:
     void storyModeClicked();
+    void cowboyRunClicked();
+
 
 protected:
     void paintEvent(QPaintEvent *event) override;

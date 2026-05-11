@@ -521,6 +521,9 @@ void GameWidget::drawUI(QPainter &p)
         p.drawText(width()/2 - 180, height()/2 - 20, "🎉 任务完成！");
         p.setFont(QFont("Microsoft YaHei", 18));
         p.drawText(width()/2 - 130, height()/2 + 30, "唐嘉琦 · 日行一善");
+        p.setPen(QColor(200, 200, 200));
+        p.setFont(QFont("Microsoft YaHei", 13));
+        p.drawText(width()/2 - 50, height()/2 + 60, "按 ESC 退出");
     }
 
     // 控制提示

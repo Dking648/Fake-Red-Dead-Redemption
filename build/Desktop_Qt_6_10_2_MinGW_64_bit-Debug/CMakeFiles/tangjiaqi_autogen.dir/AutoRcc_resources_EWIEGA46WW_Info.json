@@ -9,6 +9,7 @@
 	"INCLUDE_DIR" : "D:/Qt_project/tangjiaqi/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/tangjiaqi_autogen/include",
 	"INPUTS" : 
 	[
+		"D:/Qt_project/tangjiaqi/music/cowboy_bgm.mp3",
 		"D:/Qt_project/tangjiaqi/music/bgm.mp3",
 		"D:/Qt_project/tangjiaqi/images/tang_left_arm.png",
 		"D:/Qt_project/tangjiaqi/images/tang_head.png",

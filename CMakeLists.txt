@@ -14,11 +14,13 @@ add_executable(tangjiaqi
     MenuWidget.cpp
     LevelSelectWidget.cpp
     GameWidget.cpp
+    CowboyRunGame.cpp        # ← 新增
     Character.cpp
     Player.cpp
     NPC.cpp
     resources.qrc
-    Character.h gamewidget.h LevelSelectWidget.h MainWindow.h MenuWidget.h NPC.h Player.h
+    Character.h CowboyRunGame.h gamewidget.h LevelSelectWidget.h MainWindow.h MenuWidget.h NPC.h Player.h
 )
+
 
 target_link_libraries(tangjiaqi PRIVATE Qt6::Widgets Qt6::Multimedia)

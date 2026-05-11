@@ -30,6 +30,7 @@ LevelSelectWidget::LevelSelectWidget(QWidget *parent)
     connect(m_btnLevel1, &QPushButton::clicked, this, &LevelSelectWidget::level1Clicked);
 
     // 第二关
+    // 第二关（锁定）
     m_btnLevel2 = new QPushButton("🔒 第二关\n？？？", this);
     m_btnLevel2->setStyleSheet(btnStyle);
     m_btnLevel2->setFixedSize(300, 100);
@@ -37,6 +38,7 @@ LevelSelectWidget::LevelSelectWidget(QWidget *parent)
     connect(m_btnLevel2, &QPushButton::clicked, this, []() {
         QMessageBox::information(nullptr, "提示", "第二关正在开发中，敬请期待！");
     });
+
 
     // 返回按钮
     m_btnBack = new QPushButton("← 返回主菜单", this);

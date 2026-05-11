@@ -11,5 +11,6 @@
         <file>images/tang_right_leg.png</file>
         <file>images/menu_bg.jpg</file>
         <file>music/bgm.mp3</file>
+        <file>music/cowboy_bgm.mp3</file>
     </qresource>
 </RCC>

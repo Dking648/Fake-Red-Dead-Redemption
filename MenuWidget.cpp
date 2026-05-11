@@ -45,9 +45,8 @@ MenuWidget::MenuWidget(MainWindow *mainWindow, QWidget *parent)
     m_btnDuel->setStyleSheet(btnStyle);
     m_btnDuel->setFixedSize(280, 55);
     m_btnDuel->move(width() / 2 - 140, 455);
-    connect(m_btnDuel, &QPushButton::clicked, this, [this]() {
-        QMessageBox::information(this, "提示", "牛仔快跑模式即将开放，敬请期待！");
-    });
+    connect(m_btnDuel, &QPushButton::clicked, this, &MenuWidget::cowboyRunClicked);
+
 
     // 设置按钮
     m_btnSettings = new QPushButton("⚙️ 设置", this);

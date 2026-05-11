@@ -40,12 +40,15 @@ template <> constexpr inline auto MenuWidget::qt_create_metaobjectdata<qt_meta_t
     QtMocHelpers::StringRefStorage qt_stringData {
         "MenuWidget",
         "storyModeClicked",
-        ""
+        "",
+        "cowboyRunClicked"
     };
 
     QtMocHelpers::UintData qt_methods {
         // Signal 'storyModeClicked'
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'cowboyRunClicked'
+        QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -70,11 +73,14 @@ void MenuWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->storyModeClicked(); break;
+        case 1: _t->cowboyRunClicked(); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
         if (QtMocHelpers::indexOfMethod<void (MenuWidget::*)()>(_a, &MenuWidget::storyModeClicked, 0))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (MenuWidget::*)()>(_a, &MenuWidget::cowboyRunClicked, 1))
             return;
     }
 }
@@ -98,14 +104,14 @@ int MenuWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 2;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
+        if (_id < 2)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 1;
+        _id -= 2;
     }
     return _id;
 }
@@ -114,5 +120,11 @@ int MenuWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 void MenuWidget::storyModeClicked()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+}
+
+// SIGNAL 1
+void MenuWidget::cowboyRunClicked()
+{
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 QT_WARNING_POP

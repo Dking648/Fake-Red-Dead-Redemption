@@ -9,6 +9,8 @@
 class MenuWidget;
 class LevelSelectWidget;
 class GameWidget;
+class CowboyRunGame;
+
 
 class MainWindow : public QMainWindow
 {
@@ -17,8 +19,12 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
     QAudioOutput* audioOutput() const { return m_audioOutput; }
+
+public slots:
+    void pauseMainBgm();
+    void resumeMainBgm();
+
 
 private:
     QStackedWidget  *m_stack;
@@ -27,6 +33,7 @@ private:
     GameWidget      *m_gamePage;
     QMediaPlayer    *m_bgmPlayer;
     QAudioOutput    *m_audioOutput;
+    CowboyRunGame   *m_cowboyPage;
 };
 
 #endif
