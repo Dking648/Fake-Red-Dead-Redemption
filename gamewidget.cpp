@@ -153,7 +153,7 @@ void GameWidget::updateLogic(float dt)
             // 小孩迅速跑出画面
             m_kid->stopFollowing();
             // 给小孩一个目标：画面右边外
-            m_hintText = "走到画面右下角开始mvp结算画面！";
+            m_hintText = "走到画面中心开始mvp结算画面！";
         }
         break;
 

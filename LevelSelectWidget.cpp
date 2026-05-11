@@ -29,15 +29,13 @@ LevelSelectWidget::LevelSelectWidget(QWidget *parent)
     m_btnLevel1->move(width() / 2 - 340, 300);
     connect(m_btnLevel1, &QPushButton::clicked, this, &LevelSelectWidget::level1Clicked);
 
-    // 第二关
-    // 第二关（锁定）
-    m_btnLevel2 = new QPushButton("🔒 第二关\n？？？", this);
+    //第二关
+    m_btnLevel2 = new QPushButton("🛒 第二关\n日行一善 · 购物车", this);
     m_btnLevel2->setStyleSheet(btnStyle);
     m_btnLevel2->setFixedSize(300, 100);
     m_btnLevel2->move(width() / 2 + 40, 300);
-    connect(m_btnLevel2, &QPushButton::clicked, this, []() {
-        QMessageBox::information(nullptr, "提示", "第二关正在开发中，敬请期待！");
-    });
+    connect(m_btnLevel2, &QPushButton::clicked, this, &LevelSelectWidget::level2Clicked);
+
 
 
     // 返回按钮

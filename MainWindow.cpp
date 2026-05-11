@@ -4,6 +4,7 @@
 #include "GameWidget.h"
 #include <QUrl>
 #include "CowboyRunGame.h"
+#include "Level2Widget.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -31,6 +32,10 @@ MainWindow::MainWindow(QWidget *parent)
     m_cowboyPage = new CowboyRunGame(this);
     m_stack->addWidget(m_cowboyPage);
 
+    //   页面3：第二关游戏
+    m_level2Page = new Level2Widget(this);
+    m_stack->addWidget(m_level2Page);
+
     // 默认显示主菜单
     m_stack->setCurrentIndex(0);
 
@@ -47,7 +52,14 @@ MainWindow::MainWindow(QWidget *parent)
     connect(m_cowboyPage, &CowboyRunGame::requestPauseMainBgm, this, &MainWindow::pauseMainBgm);
     connect(m_cowboyPage, &CowboyRunGame::requestResumeMainBgm, this, &MainWindow::resumeMainBgm);
 
-
+    connect(m_levelPage, &LevelSelectWidget::level2Clicked, this, [this]() {
+        m_level2Page->resetGame();
+        m_stack->setCurrentIndex(4);
+        m_level2Page->setFocus();
+    });
+    connect(m_level2Page, &Level2Widget::backToLevelSelect, this, [this]() {
+        m_stack->setCurrentIndex(1);
+    });
 
     // 故事模式 → 关卡选择
     connect(m_menuPage, &MenuWidget::storyModeClicked, this, [this]() {

@@ -14,6 +14,7 @@ public:
 
 signals:
     void level1Clicked();
+    void level2Clicked();
     void backClicked();
 
 protected:

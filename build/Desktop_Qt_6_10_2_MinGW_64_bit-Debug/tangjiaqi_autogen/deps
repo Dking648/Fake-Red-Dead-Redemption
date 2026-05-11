@@ -640,6 +640,8 @@ tangjiaqi_autogen/timestamp: \
 	D:/Qt_project/tangjiaqi/Character.h \
 	D:/Qt_project/tangjiaqi/CowboyRunGame.cpp \
 	D:/Qt_project/tangjiaqi/CowboyRunGame.h \
+	D:/Qt_project/tangjiaqi/Level2Widget.cpp \
+	D:/Qt_project/tangjiaqi/Level2Widget.h \
 	D:/Qt_project/tangjiaqi/LevelSelectWidget.cpp \
 	D:/Qt_project/tangjiaqi/LevelSelectWidget.h \
 	D:/Qt_project/tangjiaqi/MainWindow.cpp \

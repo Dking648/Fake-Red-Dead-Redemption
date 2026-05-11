@@ -396,6 +396,12 @@
 			null
 		],
 		[
+			"D:/Qt_project/tangjiaqi/Level2Widget.h",
+			"Mu",
+			"EWIEGA46WW/moc_Level2Widget.cpp",
+			null
+		],
+		[
 			"D:/Qt_project/tangjiaqi/LevelSelectWidget.h",
 			"Mu",
 			"EWIEGA46WW/moc_LevelSelectWidget.cpp",
@@ -503,6 +509,7 @@
 	[
 		[ "D:/Qt_project/tangjiaqi/Character.cpp", "Mu", null ],
 		[ "D:/Qt_project/tangjiaqi/CowboyRunGame.cpp", "Mu", null ],
+		[ "D:/Qt_project/tangjiaqi/Level2Widget.cpp", "Mu", null ],
 		[ "D:/Qt_project/tangjiaqi/LevelSelectWidget.cpp", "Mu", null ],
 		[ "D:/Qt_project/tangjiaqi/MainWindow.cpp", "Mu", null ],
 		[ "D:/Qt_project/tangjiaqi/MenuWidget.cpp", "Mu", null ],

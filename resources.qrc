@@ -12,5 +12,8 @@
         <file>images/menu_bg.jpg</file>
         <file>music/bgm.mp3</file>
         <file>music/cowboy_bgm.mp3</file>
+        <file>images/cart.png</file>
+        <file>images/date.png</file>
+        <file>images/man_full.png</file>
     </qresource>
 </RCC>

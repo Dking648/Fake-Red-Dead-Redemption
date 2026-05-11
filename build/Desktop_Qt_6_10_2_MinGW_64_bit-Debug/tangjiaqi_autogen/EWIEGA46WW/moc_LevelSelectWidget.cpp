@@ -41,14 +41,17 @@ template <> constexpr inline auto LevelSelectWidget::qt_create_metaobjectdata<qt
         "LevelSelectWidget",
         "level1Clicked",
         "",
+        "level2Clicked",
         "backClicked"
     };
 
     QtMocHelpers::UintData qt_methods {
         // Signal 'level1Clicked'
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
-        // Signal 'backClicked'
+        // Signal 'level2Clicked'
         QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'backClicked'
+        QtMocHelpers::SignalData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -73,14 +76,17 @@ void LevelSelectWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->level1Clicked(); break;
-        case 1: _t->backClicked(); break;
+        case 1: _t->level2Clicked(); break;
+        case 2: _t->backClicked(); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
         if (QtMocHelpers::indexOfMethod<void (LevelSelectWidget::*)()>(_a, &LevelSelectWidget::level1Clicked, 0))
             return;
-        if (QtMocHelpers::indexOfMethod<void (LevelSelectWidget::*)()>(_a, &LevelSelectWidget::backClicked, 1))
+        if (QtMocHelpers::indexOfMethod<void (LevelSelectWidget::*)()>(_a, &LevelSelectWidget::level2Clicked, 1))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (LevelSelectWidget::*)()>(_a, &LevelSelectWidget::backClicked, 2))
             return;
     }
 }
@@ -104,14 +110,14 @@ int LevelSelectWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }
@@ -123,8 +129,14 @@ void LevelSelectWidget::level1Clicked()
 }
 
 // SIGNAL 1
-void LevelSelectWidget::backClicked()
+void LevelSelectWidget::level2Clicked()
 {
     QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+}
+
+// SIGNAL 2
+void LevelSelectWidget::backClicked()
+{
+    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
 }
 QT_WARNING_POP

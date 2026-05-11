@@ -10,6 +10,7 @@ class MenuWidget;
 class LevelSelectWidget;
 class GameWidget;
 class CowboyRunGame;
+class Level2Widget;
 
 
 class MainWindow : public QMainWindow
@@ -34,6 +35,7 @@ private:
     QMediaPlayer    *m_bgmPlayer;
     QAudioOutput    *m_audioOutput;
     CowboyRunGame   *m_cowboyPage;
+    Level2Widget    *m_level2Page;
 };
 
 #endif
